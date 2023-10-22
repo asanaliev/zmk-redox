@@ -43,11 +43,11 @@
             // | CRTL  | ALT | GUI | LOWER |    BKSP    | ESC | SPACE   | --- | DEL  | SPACE |     RET     | LEFT  | DOWN | UP |   RIGHT   |
 
             bindings = <
-&none        &kp N1    &kp N2  &kp N3   &kp N4               &kp N5                                                  &kp N6  &kp N7            &kp N9     &kp N0      &kp N8      &kp RC(RG(Q))
-&none        &kp Q     &kp W   &kp E    &kp R                &kp T   &none                           &none           &kp Y   &kp U             &kp I      &kp O       &kp P       &none
-&bootloader  &kp A     &kp S   &lt 1 D  &kp F                &kp G   &none                           &none           &kp H   &kp J             &kp K      &kp L       &caps_word  &bootloader
-&none        &kp Z     &kp X   &kp C    &kp V                &kp B   &kp LGUI      &none      &none  &kp RGUI        &kp N   &kp M             &kp COMMA  &kp PERIOD  &none       &none
-&kp LCTRL    &kp LALT  &none   &none    &mt LSHFT BACKSPACE          &cx_lt 4 ESC  &kp TAB    &none  &cx_lt 1 SPACE          &mt RSHIFT ENTER  &none      &none       &none       &none
+&none        &kp N1    &kp N2  &kp N3   &kp N4               &kp N5                                                        &kp N6  &kp N7            &kp N9     &kp N0      &kp N8      &kp RC(RG(Q))
+&none        &kp Q     &kp W   &kp E    &kp R                &kp T   &none                                 &none           &kp Y   &kp U             &kp I      &kp O       &kp P       &none
+&bootloader  &kp A     &kp S   &lt 1 D  &kp F                &kp G   &none                                 &none           &kp H   &kp J             &kp K      &kp L       &caps_word  &bootloader
+&none        &kp Z     &kp X   &kp C    &kp V                &kp B   &kp LGUI      &none      &none        &kp RGUI        &kp N   &kp M             &kp COMMA  &kp PERIOD  &none       &none
+&kp LCTRL    &kp LALT  &none   &none    &mt LSHFT BACKSPACE          &cx_lt 4 ESC  &kp TAB    &kp RG(TAB)  &cx_lt 1 SPACE          &mt RSHIFT ENTER  &none      &none       &none       &none
             >;
         };
 
