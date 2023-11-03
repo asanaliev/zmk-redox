@@ -77,7 +77,7 @@
             // | CRTL  | ALT | GUI | LOWER |    GUI    | LOWER | SPACE   | --- | DEL  | SPACE |    RAISE    | LEFT | DOWN | UP    | RIGHT |
 
             bindings = <
-&kp F19  &trans     &trans    &trans    &trans    &trans                                        &trans     &trans     &trans     &trans    &trans     &trans
+&kp F19  &kp F16    &trans    &trans    &trans    &trans                                        &trans     &trans     &trans     &trans    &trans     &trans
 &kp F17  &kp EXCL   &kp AT    &kp HASH  &kp DLLR  &kp PRCNT  &trans                     &trans  &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR   &kp DEL
 &trans   &kp UNDER  &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE   &trans                     &trans  &kp HOME   &kp PG_UP  &kp PSCRN  &kp UP    &kp GRAVE  &kp TILDE
 &trans   &kp ESC    &kp LGUI  &kp LPAR  &kp RPAR  &kp TILDE  &trans   &trans    &trans  &trans  &kp END    &kp PG_DN  &kp LEFT   &kp DOWN  &kp RIGHT  &kp RET
