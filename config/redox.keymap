@@ -60,11 +60,11 @@
             // | CRTL  | ALT | GUI | LOWER |     GUI     | LOWER | SPACE   | --- | DEL  |  0  |    RAISE  | LEFT | DOWN | UP  | RIGHT |
 
             bindings = <
-&trans  &trans  &trans                &kp SQT               &kp SLASH              &trans                                           &trans  &trans         &trans     &trans     &trans       &trans
-&none   &none   &kp LS(LEFT_BRACKET)  &kp LS(SINGLE_QUOTE)  &kp LS(RIGHT_BRACKET)  &none   &trans                           &trans  &none   &kp BACKSLASH  &none      &kp GRAVE  &kp N0       &kp DEL
-&trans  &none   &kp LS(NUMBER_9)      &kp MINUS             &kp LS(NUMBER_0)       &none   &trans                           &trans  &none   &none          &kp EQUAL  &kp SLASH  &kp KP_PLUS  &kp KP_MINUS
-&trans  &none   &kp LBKT              &kp SEMICOLON         &kp RIGHT_BRACKET      &none   &trans         &trans    &trans  &trans  &none   &none          &none      &none      &kp RET      &kp RET
-&trans  &trans  &trans                &trans                &trans                         &kp LS(EQUAL)  &trans    &trans  &none           &none          &trans     &trans     &trans       &trans
+&trans  &trans  &trans                &kp SQT               &kp SLASH              &trans                                                  &trans  &trans         &trans     &trans     &trans       &trans
+&none   &none   &kp LS(LEFT_BRACKET)  &kp LS(SINGLE_QUOTE)  &kp LS(RIGHT_BRACKET)  &none          &trans                           &trans  &none   &kp BACKSLASH  &none      &kp GRAVE  &kp N0       &kp DEL
+&trans  &none   &kp LS(SEMICOLON)     &kp MINUS             &kp EQUAL              &kp SEMICOLON  &trans                           &trans  &none   &none          &kp EQUAL  &kp SLASH  &kp KP_PLUS  &kp KP_MINUS
+&trans  &none   &kp LBKT              &kp SEMICOLON         &kp RIGHT_BRACKET      &none          &trans         &trans    &trans  &trans  &none   &none          &none      &none      &kp RET      &kp RET
+&trans  &trans  &trans                &trans                &trans                                &kp LS(EQUAL)  &trans    &trans  &none           &none          &trans     &trans     &trans       &trans
             >;
         };
 
