@@ -35,7 +35,7 @@
         del_line: del_line {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RG(LEFT) &kp RS(RG(RIGHT)) &kp RG(X) &kp RC(K)>;
+            bindings = <&kp RG(LEFT) &kp RC(K)>;
             label = "DEL_LINE";
         };
     };
