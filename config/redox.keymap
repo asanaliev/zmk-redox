@@ -86,7 +86,7 @@
             // | CRTL  | ALT | GUI | LOWER |    GUI    | LOWER | SPACE   | --- | DEL  | SPACE |    RAISE    | LEFT | DOWN | UP    | RIGHT |
 
             bindings = <
-&kp F19  &kp F16  &trans  &trans  &trans  &trans                                     &kp F15  &kp K_VOLUME_DOWN  &kp K_MUTE  &kp K_VOL_UP  &kp F14  &trans
+&kp F19  &kp F16  &trans  &trans  &trans  &trans                                     &kp F13  &kp K_VOLUME_DOWN  &kp K_MUTE  &kp K_VOL_UP  &kp F14  &trans
 &kp F17  &none    &none   &none   &none   &none   &trans                     &trans  &none    &none              &none       &none         &none    &none
 &trans   &none    &none   &none   &none   &none   &trans                     &trans  &none    &none              &none       &none         &none    &none
 &trans   &none    &none   &none   &none   &none   &trans   &trans    &trans  &trans  &none    &none              &none       &none         &none    &none
