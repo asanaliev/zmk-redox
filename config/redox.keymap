@@ -123,11 +123,11 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans     &trans                  &trans  &trans                                       &trans  &trans  &trans        &trans  &trans  &trans
-&trans  &trans  &kp RG(W)  &kp RS(RA(RC(RG(F4))))  &trans  &trans  &trans                       &trans  &trans  &trans  &trans        &trans  &trans  &trans
-&trans  &trans  &trans     &kp RG(C)               &trans  &trans  &trans                       &trans  &trans  &trans  &kp NUMBER_1  &trans  &trans  &trans
-&trans  &trans  &kp RG(Q)  &trans                  &trans  &trans  &trans     &trans    &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans
-&trans  &trans  &trans     &trans                  &trans          &kp RG(V)  &trans    &trans  &tog 5          &trans  &trans        &trans  &trans  &trans
+&trans  &trans     &trans     &trans                  &trans             &trans                                            &trans  &trans  &trans        &trans  &trans  &trans
+&trans  &kp RG(Q)  &kp RG(W)  &kp RS(RA(RC(RG(F4))))  &trans             &trans  &trans                            &trans  &trans  &trans  &trans        &trans  &trans  &trans
+&trans  &kp RG(A)  &kp RG(X)  &kp RG(C)               &kp RG(V)          &trans  &trans                            &trans  &trans  &trans  &kp NUMBER_1  &trans  &trans  &trans
+&trans  &trans     &none      &trans                  &trans             &trans  &trans     &trans         &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans
+&trans  &trans     &trans     &trans                  &kp RG(BACKSPACE)          &kp RG(V)  &kp RG(TAB)    &trans  &tog 5          &trans  &trans        &trans  &trans  &trans
             >;
         };
     };
