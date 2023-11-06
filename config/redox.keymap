@@ -117,7 +117,17 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                      &trans         &trans  &kp RG(LEFT)  &kp UP    &kp RG(RIGHT)  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                      &trans         &trans  &kp LEFT      &kp DOWN  &kp RIGHT      &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &sk RALT  &sk RCTRL      &trans  &kp RA(LEFT)  &trans    &kp RA(RIGHT)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans    &none     &kp RG(SPACE)          &kp F15       &trans    &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans    &tog 5    &kp RG(SPACE)          &kp F15       &trans    &trans         &trans  &trans
+            >;
+        };
+
+        MOUSE {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                                    &trans  &trans  &trans        &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans        &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &kp NUMBER_1  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans    &trans  &tog 5          &trans  &trans        &trans  &trans  &trans
             >;
         };
     };
