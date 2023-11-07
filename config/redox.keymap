@@ -17,7 +17,8 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <400>;
+            flavor = "tap-preferred";
         };
         mt_cx: require_prior_idle {
             compatible = "zmk,behavior-hold-tap";
@@ -113,21 +114,21 @@
 
         NAV {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                             &trans  &trans        &trans    &trans         &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                      &trans         &trans  &kp RG(LEFT)  &kp UP    &kp RG(RIGHT)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                      &trans         &trans  &kp LEFT      &kp DOWN  &kp RIGHT      &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &sk RALT  &sk RCTRL      &trans  &kp RA(LEFT)  &trans    &kp RA(RIGHT)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans    &none     &kp RG(SPACE)          &kp F15       &trans    &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                          &trans  &trans        &trans    &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                   &trans         &trans  &kp RG(LEFT)  &kp UP    &kp RG(RIGHT)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                   &trans         &trans  &kp LEFT      &kp DOWN  &kp RIGHT      &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &none  &none          &trans  &kp RA(LEFT)  &trans    &kp RA(RIGHT)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans    &none  &kp RG(SPACE)          &kp F15       &trans    &trans         &trans  &trans
             >;
         };
 
         MOUSE {
             bindings = <
-&trans  &trans     &trans     &trans                  &trans             &trans                                             &trans  &trans  &trans        &trans  &trans  &trans
-&trans  &kp RG(Q)  &kp RG(W)  &kp RS(RA(RC(RG(F4))))  &trans             &trans  &trans                             &trans  &trans  &trans  &trans        &trans  &trans  &trans
-&trans  &kp RG(A)  &kp RG(X)  &kp RG(C)               &kp RG(V)          &trans  &trans                             &trans  &trans  &trans  &kp NUMBER_1  &trans  &trans  &trans
-&trans  &trans     &none      &trans                  &trans             &trans  &trans      &trans         &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans
-&trans  &trans     &trans     &trans                  &kp RG(BACKSPACE)          &kp ESCAPE  &kp RG(TAB)    &trans  &tog 5          &trans  &trans        &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans  &trans                                        &trans  &trans  &trans        &trans  &trans  &trans
+&trans  &none   &kp RG(W)  &none      &trans  &trans  &trans                        &trans  &trans  &trans  &trans        &trans  &trans  &trans
+&trans  &none   &none      &kp RG(C)  &none   &trans  &trans                        &trans  &trans  &trans  &kp NUMBER_1  &trans  &trans  &trans
+&trans  &trans  &none      &trans     &trans  &trans  &trans      &trans    &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &none           &kp ESCAPE  &none     &trans  &none           &trans  &trans        &trans  &trans  &trans
             >;
         };
     };
