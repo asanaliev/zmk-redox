@@ -17,8 +17,8 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <400>;
-            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            flavor = "balanced";
         };
         mt_cx: require_prior_idle {
             compatible = "zmk,behavior-hold-tap";
@@ -56,8 +56,8 @@
 &sl 2        &kp N4  &kp N5         &kp N1          &kp N2               &kp N3                                                           &kp N8  &kp N9            &kp N0          &kp N7              &kp N6       &kp F18
 &none        &kp Q   &mt_cx LALT W  &mt_cx LCTRL E  &kp R                &kp T   &none                                    &none           &kp Y   &kp U             &mt_cx RCTRL I  &mt_cx RIGHT_ALT O  &kp P        &none
 &bootloader  &kp A   &kp S          &kp D           &kp F                &kp G   &none                                    &none           &kp H   &kp J             &kp K           &kp L               &caps_word   &none
-&none        &kp Z   &kp X          &kp C           &kp V                &kp B   &mt_cx LGUI A  &none        &none        &mt_cx RGUI B   &kp N   &kp M             &kp COMMA       &kp PERIOD          &none        &none
-&none        &none   &none          &none           &mt LSHFT BACKSPACE          &cx_lt 4 ESC   &lt 3 TAB    &kp RG(TAB)  &cx_lt 1 SPACE          &mt RSHIFT ENTER  &none           &none               &bootloader  &lt 5 RG(RA(RS(RC(F4))))
+&none        &kp Z   &kp X          &kp C           &kp V                &kp B   &mt_cx LGUI A  &none        &none        &mt_cx RGUI B   &kp N   &kp M             &kp COMMA       &kp PERIOD          &none        &lt 5 RS(RA(RC(RG(F4))))
+&none        &none   &none          &none           &mt LSHFT BACKSPACE          &cx_lt 4 ESC   &lt 3 TAB    &kp RG(TAB)  &cx_lt 1 SPACE          &mt RSHIFT ENTER  &none           &none               &bootloader  &none
             >;
         };
 
@@ -90,7 +90,7 @@
 &kp F19  &kp F16  &trans  &trans  &trans  &trans                                                 &none  &none                   &none                   &none   &none   &trans
 &kp F17  &none    &none   &none   &none   &none   &trans                           &kp C_BRI_UP  &none  &none                   &kp RS(RA(RC(RG(F2))))  &none   &none   &none
 &trans   &none    &none   &none   &none   &none   &trans                           &kp C_BRI_DN  &none  &kp RS(RA(RC(RG(F3))))  &kp RS(RA(RC(RG(F1))))  &none   &none   &none
-&trans   &none    &none   &none   &none   &none   &trans   &trans    &kp K_MUTE    &kp F13       &none  &none                   &none                   &none   &none   &none
+&trans   &none    &none   &none   &none   &none   &trans   &trans    &none         &kp F13       &none  &none                   &none                   &none   &none   &none
 &trans   &trans   &trans  &none   &trans          &kp ESC  &trans    &kp K_VOL_DN  &kp F14              &kp K_VOLUME_UP         &trans                  &trans  &trans  &trans
             >;
         };
