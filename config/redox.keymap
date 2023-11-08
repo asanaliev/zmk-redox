@@ -136,7 +136,7 @@
             bindings = <
 &trans  &trans  &trans  &trans                  &trans  &trans                                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans                  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp RS(RA(RC(RG(F4))))  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp RS(RA(RC(RG(F5))))  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans                  &trans          &trans  &trans    &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
