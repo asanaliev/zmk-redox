@@ -56,7 +56,7 @@
 &sl 2        &kp N4  &kp N5         &kp N1          &kp N2               &kp N3                                                           &kp N8  &kp N9            &kp N0          &kp N7              &kp N6       &kp F18
 &none        &kp Q   &mt_cx LALT W  &mt_cx LCTRL E  &kp R                &kp T   &none                                    &none           &kp Y   &kp U             &mt_cx RCTRL I  &mt_cx RIGHT_ALT O  &kp P        &none
 &bootloader  &kp A   &kp S          &kp D           &kp F                &kp G   &none                                    &none           &kp H   &kp J             &kp K           &kp L               &caps_word   &none
-&none        &kp Z   &kp X          &kp C           &kp V                &kp B   &mt_cx LGUI A  &none        &none        &mt_cx RGUI B   &kp N   &kp M             &kp COMMA       &kp PERIOD          &none        &lt 5 RS(RA(RC(RG(F4))))
+&none        &kp Z   &kp X          &kp C           &kp V                &kp B   &mt_cx LGUI A  &none        &cx_lt 6 A   &mt_cx RGUI B   &kp N   &kp M             &kp COMMA       &kp PERIOD          &none        &lt 5 RS(RA(RC(RG(F4))))
 &none        &none   &none          &none           &mt LSHFT BACKSPACE          &cx_lt 4 ESC   &lt 3 TAB    &kp RG(TAB)  &cx_lt 1 SPACE          &mt RSHIFT ENTER  &none           &none               &bootloader  &none
             >;
         };
@@ -129,6 +129,16 @@
 &trans  &none   &none      &none      &none      &trans  &trans                        &trans  &trans  &trans  &none   &trans  &trans  &trans
 &trans  &trans  &none      &kp RG(C)  &kp RG(V)  &trans  &trans      &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &none              &kp ESCAPE  &none     &trans  &none           &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        APPS {
+            bindings = <
+&trans  &trans  &trans  &trans                  &trans  &trans                                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans                  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp RS(RA(RC(RG(F4))))  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans                  &trans          &trans  &trans    &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
