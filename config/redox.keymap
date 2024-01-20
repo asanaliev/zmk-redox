@@ -54,11 +54,11 @@
             // | CRTL  | ALT | GUI | LOWER |    BKSP    | ESC | SPACE   | --- | DEL  | SPACE |     RET     | LEFT  | DOWN | UP |   RIGHT   |
 
             bindings = <
-&kp NUMBER_1  &kp N4        &kp N5          &kp N1          &kp N2         &kp N3                                                                 &kp N8  &kp N9     &kp N0          &kp N7              &kp N6        &kp F18
-&kp NUMBER_2  &kp Q         &mt_cx LALT W   &mt_cx LCTRL E  &kp R          &kp T   &kp NUMBER_4                                   &caps_word      &kp Y   &kp U      &mt_cx RCTRL I  &mt_cx RIGHT_ALT O  &kp P         &kp NUMBER_1
-&kp LEFT_GUI  &kp A         &mt_cx LSHFT S  &cx_lt 7 D      &kp F          &kp G   &key_repeat                                    &kp NUMBER_5    &kp H   &kp J      &cx_lt 6 K      &mt_cx RSHIFT L     &kp NUMBER_7  &kp NUMBER_2
-&none         &kp Z         &kp X           &kp C           &kp V          &kp B   &none         &kp NUMBER_6    &key_repeat      &none           &kp N   &kp M      &kp COMMA       &kp PERIOD          &kp NUMBER_8  &kp NUMBER_3
-&bootloader   &kp NUMBER_7  &none           &key_repeat     &kp BACKSPACE          &cx_lt 4 ESC  &sk LGUI        &sk RIGHT_SHIFT  &cx_lt 1 SPACE          &kp ENTER  &none           &none               &kp NUMBER_9  &kp NUMBER_4
+&none        &kp N4  &kp N5          &kp N1          &kp N2         &kp N3                                                             &kp N8  &kp N9     &kp N0          &kp N7              &kp N6     &kp F18
+&none        &kp Q   &mt_cx LALT W   &mt_cx LCTRL E  &kp R          &kp T   &none                                      &caps_word      &kp Y   &kp U      &mt_cx RCTRL I  &mt_cx RIGHT_ALT O  &kp P      &none
+&none        &kp A   &mt_cx LSHFT S  &cx_lt 7 D      &kp F          &kp G   &key_repeat                                &none           &kp H   &kp J      &cx_lt 6 K      &mt_cx RSHIFT L     &none      &none
+&none        &kp Z   &kp X           &kp C           &kp V          &kp B   &none         &none       &key_repeat      &none           &kp N   &kp M      &none           &kp PERIOD          &kp COMMA  &none
+&bootloader  &none   &none           &key_repeat     &kp BACKSPACE          &cx_lt 4 ESC  &sk LGUI    &sk RIGHT_SHIFT  &cx_lt 1 SPACE          &kp ENTER  &none           &none               &none      &none
             >;
         };
 
