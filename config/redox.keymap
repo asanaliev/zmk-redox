@@ -58,7 +58,17 @@
 &none        &kp Q   &mt_cx LALT W   &mt_cx LCTRL E  &kp R          &kp T   &none                                      &caps_word      &kp Y   &kp U      &mt_cx RCTRL I  &mt_cx RIGHT_ALT O  &kp P      &none
 &none        &kp A   &mt_cx LSHFT S  &cx_lt 7 D      &kp F          &kp G   &key_repeat                                &none           &kp H   &kp J      &cx_lt 6 K      &mt_cx RSHIFT L     &none      &none
 &none        &kp Z   &kp X           &kp C           &kp V          &kp B   &none         &none       &key_repeat      &none           &kp N   &kp M      &none           &kp PERIOD          &kp COMMA  &none
-&bootloader  &none   &none           &key_repeat     &kp BACKSPACE          &cx_lt 4 ESC  &sk LGUI    &sk RIGHT_SHIFT  &cx_lt 1 SPACE          &kp ENTER  &none           &none               &none      &none
+&bootloader  &none   &none           &key_repeat     &kp BACKSPACE          &cx_lt 1 ESC  &sk LGUI    &sk RIGHT_SHIFT  &cx_lt 2 SPACE          &kp ENTER  &none           &none               &none      &none
+            >;
+        };
+
+        NAV {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans        &trans        &trans    &trans         &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                           &trans         &trans        &kp RG(LEFT)  &kp UP    &kp RG(RIGHT)  &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                           &trans         &kp RA(LEFT)  &kp LEFT      &kp DOWN  &kp RIGHT      &kp RA(RIGHT)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &none          &none          &trans        &kp RA(LEFT)  &trans    &kp RA(RIGHT)  &trans         &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans    &kp RA(SPACE)  &kp RG(SPACE)                &kp F15       &trans    &trans         &trans         &trans
             >;
         };
 
@@ -110,16 +120,6 @@
 &trans  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PLAY_PAUSE  &none   &sys_reset                     &trans      &kp F1        &kp RA(BACKSPACE)  &del_line     &kp RA(DELETE)  &kp F5        &kp F6
 &trans  &kp PSCRN   &kp PSCRN     &kp CLCK      &none             &none   &trans       &trans    &trans  &trans      &kp F7        &kp F8             &kp F9        &kp F10         &kp F11       &kp F12
 &trans  &trans      &trans        &trans        &trans                    &trans       &trans    &trans  &kp RG(C)                 &kp RG(V)          &trans        &trans          &trans        &trans
-            >;
-        };
-
-        NAV {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans        &trans        &trans    &trans         &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                           &trans         &trans        &kp RG(LEFT)  &kp UP    &kp RG(RIGHT)  &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                           &trans         &kp RA(LEFT)  &kp LEFT      &kp DOWN  &kp RIGHT      &kp RA(RIGHT)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &none          &none          &trans        &kp RA(LEFT)  &trans    &kp RA(RIGHT)  &trans         &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans    &kp RA(SPACE)  &kp RG(SPACE)                &kp F15       &trans    &trans         &trans         &trans
             >;
         };
 
