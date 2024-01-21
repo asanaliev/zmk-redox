@@ -32,7 +32,7 @@
     };
 
     macros {
-        del_line: del_line {
+        cut_line: del_line {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RG(LEFT) &kp RG(RS(RIGHT)) &kp RG(X)>;
@@ -66,7 +66,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                               &trans     &trans        &kp RG(LEFT)      &kp UP         &kp RG(RIGHT)      &trans         &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                               &trans     &kp RA(LEFT)  &kp LEFT          &kp DOWN       &kp RIGHT          &kp RA(RIGHT)  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &none              &none      &trans        &kp RS(RA(LEFT))  &kp PAGE_DOWN  &kp RS(RA(RIGHT))  &trans         &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans    &kp RA(BACKSPACE)  &del_line                &kp RA(DELETE)    &trans         &trans             &trans         &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans    &kp RA(BACKSPACE)  &cut_line                &kp RA(DELETE)    &trans         &trans             &trans         &trans
             >;
         };
 
@@ -81,7 +81,7 @@
             bindings = <
 &kp F1  &kp F2     &kp F3     &kp F4        &kp F5            &kp F6                                         &none  &none              &none      &none           &none   &none
 &trans  &none      &none      &none         &none             &none   &bootloader                    &none   &none  &none              &none      &none           &none   &none
-&trans  &none      &none      &kp C_VOL_UP  &kp C_PLAY_PAUSE  &none   &sys_reset                     &trans  &none  &kp RA(BACKSPACE)  &del_line  &kp RA(DELETE)  &none   &none
+&trans  &none      &none      &kp C_VOL_UP  &kp C_PLAY_PAUSE  &none   &sys_reset                     &trans  &none  &kp RA(BACKSPACE)  &cut_line  &kp RA(DELETE)  &none   &none
 &trans  &kp PSCRN  &kp PSCRN  &kp CLCK      &none             &none   &trans       &trans    &trans  &trans  &none  &none              &none      &none           &none   &none
 &trans  &trans     &trans     &trans        &trans                    &trans       &trans    &none   &none          &none              &trans     &trans          &trans  &trans
             >;
