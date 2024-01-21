@@ -38,6 +38,13 @@
             bindings = <&kp RG(LEFT) &kp RG(RS(RIGHT)) &kp RG(X)>;
             label = "DEL_LINE";
         };
+
+        select_line: select_line {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RG(LEFT) &kp RG(RS(RIGHT))>;
+            label = "SELECT_LINE";
+        };
     };
 
     keymap {
@@ -62,11 +69,11 @@
 
         NAV {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans        &kp HOME          &kp PAGE_UP    &kp END            &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                               &trans     &trans        &kp RG(LEFT)      &kp UP         &kp RG(RIGHT)      &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                               &trans     &kp RA(LEFT)  &kp LEFT          &kp DOWN       &kp RIGHT          &kp RA(RIGHT)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &none              &none      &trans        &kp RS(RA(LEFT))  &kp PAGE_DOWN  &kp RS(RA(RIGHT))  &trans         &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans    &kp RA(BACKSPACE)  &cut_line                &kp RA(DELETE)    &trans         &trans             &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                     &trans        &kp HOME          &kp PAGE_UP    &kp END            &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                               &trans        &trans        &kp RG(LEFT)      &kp UP         &kp RG(RIGHT)      &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                               &trans        &kp RA(LEFT)  &kp LEFT          &kp DOWN       &kp RIGHT          &kp RA(RIGHT)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &none              &select_line  &trans        &kp RS(RA(LEFT))  &kp PAGE_DOWN  &kp RS(RA(RIGHT))  &trans         &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans    &kp RA(BACKSPACE)  &cut_line                   &kp RA(DELETE)    &trans         &trans             &trans         &trans
             >;
         };
 
