@@ -35,7 +35,10 @@
         cut_line: del_line {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RG(LEFT) &kp RG(RS(RIGHT)) &kp RG(X)>;
+            bindings =
+                <&macro_press>,
+                <&kp RG(LEFT) &kp RS(RG(RIGHT)) &kp RG(C) &kp RC(K)>;
+
             label = "DEL_LINE";
         };
 
