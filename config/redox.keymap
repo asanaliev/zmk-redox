@@ -32,10 +32,10 @@
     };
 
     macros {
-        cut_line: del_line {
+        delete_line: del_line {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RG(LEFT) &kp RS(RG(RIGHT)) &kp RG(C) &kp RC(K)>;
+            bindings = <&kp RG(LEFT) &kp RC(K)>;
             label = "DEL_LINE";
         };
 
@@ -59,21 +59,21 @@
             // | CRTL  | ALT | GUI | LOWER |    BKSP    | ESC | SPACE   | --- | DEL  | SPACE |     RET     | LEFT  | DOWN | UP |   RIGHT   |
 
             bindings = <
-&none        &kp N4  &kp N5          &kp N1          &kp N2      &kp N3                                                                    &kp N8  &kp N9  &kp N0          &kp N7              &kp N6     &kp F18
-&none        &kp Q   &mt_cx LALT W   &mt_cx LCTRL E  &kp R       &kp T   &key_repeat                                       &none           &kp Y   &kp U   &mt_cx RCTRL I  &mt_cx RIGHT_ALT O  &kp P      &none
-&none        &kp A   &mt_cx LSHFT S  &cx_lt 7 D      &kp F       &kp G   &kp RG(TAB)                                       &none           &kp H   &kp J   &cx_lt 6 K      &mt_cx RSHIFT L     &none      &none
-&none        &kp Z   &kp X           &kp C           &kp V       &kp B   &kp ESC         &none            &caps_word       &kp TAB         &kp N   &kp M   &none           &kp PERIOD          &kp COMMA  &none
-&bootloader  &none   &none           &none           &sk RSHIFT          &cx_lt 1 ENTER  &kp BACKSPACE    &sk RIGHT_SHIFT  &cx_lt 3 SPACE          &none   &kp RG(SPACE)   &none               &none      &none
+&none        &kp N4  &kp N5          &kp N1          &kp N2      &kp N3                                                                        &kp N8  &kp N9  &kp N0          &kp N7              &kp N6     &kp F18
+&none        &kp Q   &mt_cx LALT W   &mt_cx LCTRL E  &kp R       &kp T   &none                                                 &none           &kp Y   &kp U   &mt_cx RCTRL I  &mt_cx RIGHT_ALT O  &kp P      &none
+&none        &kp A   &mt_cx LSHFT S  &cx_lt 7 D      &kp F       &kp G   &kp RG(TAB)                                           &none           &kp H   &kp J   &cx_lt 6 K      &mt_cx RSHIFT L     &none      &none
+&none        &kp Z   &kp X           &kp C           &kp V       &kp B   &kp ESC         &kp RG(BACKSPACE)    &caps_word       &kp TAB         &kp N   &kp M   &none           &kp PERIOD          &kp COMMA  &none
+&bootloader  &none   &none           &none           &sk RSHIFT          &cx_lt 1 ENTER  &kp BACKSPACE        &sk RIGHT_SHIFT  &cx_lt 3 SPACE          &none   &kp RG(SPACE)   &none               &none      &none
             >;
         };
 
         NAV {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                                   &trans        &kp RG(UP)        &kp PAGE_UP    &kp RG(DOWN)       &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                               &trans      &trans        &kp RG(LEFT)      &kp UP         &kp RG(RIGHT)      &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                               &trans      &kp RA(LEFT)  &kp LEFT          &kp DOWN       &kp RIGHT          &kp RA(RIGHT)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &none              &copy_line  &trans        &kp RS(RA(LEFT))  &kp PAGE_DOWN  &kp RS(RA(RIGHT))  &trans         &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans    &kp RA(BACKSPACE)  &cut_line                 &kp RA(DELETE)    &trans         &trans             &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                     &trans        &kp RG(UP)        &kp PAGE_UP    &kp RG(DOWN)       &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                               &trans        &trans        &kp RG(LEFT)      &kp UP         &kp RG(RIGHT)      &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                               &trans        &kp RA(LEFT)  &kp LEFT          &kp DOWN       &kp RIGHT          &kp RA(RIGHT)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &none              &copy_line    &trans        &kp RS(RA(LEFT))  &kp PAGE_DOWN  &kp RS(RA(RIGHT))  &trans         &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans    &kp RA(BACKSPACE)  &delete_line                &kp RA(DELETE)    &trans         &trans             &trans         &trans
             >;
         };
 
@@ -86,11 +86,11 @@
             // | CRTL  | ALT   |  GUI     |   LOWER   |      GUI        | LOWER | SPACE   | --- | DEL  | SPACE |   RAISE   | LEFT | DOWN | UP  |   RIGHT    |
 
             bindings = <
-&kp F1  &kp F2     &kp F3     &kp F4        &kp F5            &kp F6                                         &none  &none              &none      &none           &none   &none
-&trans  &none      &none      &none         &none             &none   &bootloader                    &none   &none  &none              &none      &none           &none   &none
-&trans  &none      &none      &kp C_VOL_UP  &kp C_PLAY_PAUSE  &none   &sys_reset                     &trans  &none  &kp RA(BACKSPACE)  &cut_line  &kp RA(DELETE)  &none   &none
-&trans  &kp PSCRN  &kp PSCRN  &kp CLCK      &none             &none   &trans       &trans    &trans  &trans  &none  &none              &none      &none           &none   &none
-&trans  &trans     &trans     &trans        &trans                    &trans       &trans    &none   &none          &none              &trans     &trans          &trans  &trans
+&kp F1  &kp F2     &kp F3     &kp F4        &kp F5            &kp F6                                         &none  &none              &none         &none           &none   &none
+&trans  &none      &none      &none         &none             &none   &bootloader                    &none   &none  &none              &none         &none           &none   &none
+&trans  &none      &none      &kp C_VOL_UP  &kp C_PLAY_PAUSE  &none   &sys_reset                     &trans  &none  &kp RA(BACKSPACE)  &delete_line  &kp RA(DELETE)  &none   &none
+&trans  &kp PSCRN  &kp PSCRN  &kp CLCK      &none             &none   &trans       &trans    &trans  &trans  &none  &none              &none         &none           &none   &none
+&trans  &trans     &trans     &trans        &trans                    &trans       &trans    &none   &none          &none              &trans        &trans          &trans  &trans
             >;
         };
 
