@@ -38,13 +38,6 @@
             bindings = <&kp RG(LEFT) &kp RC(K)>;
             label = "DEL_LINE";
         };
-
-        copy_line: select_line {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RG(LEFT) &kp RG(RS(RIGHT)) &kp RG(C)>;
-            label = "SELECT_LINE";
-        };
     };
 
     keymap {
