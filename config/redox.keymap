@@ -61,8 +61,8 @@
             bindings = <
 &none        &kp N4  &kp N5          &kp N1          &kp N2         &kp N3                                                               &kp N8  &kp N9  &kp N0          &kp N7              &kp N6     &kp F18
 &none        &kp Q   &mt_cx LALT W   &mt_cx LCTRL E  &kp R          &kp T   &key_repeat                                  &none           &kp Y   &kp U   &mt_cx RCTRL I  &mt_cx RIGHT_ALT O  &kp P      &none
-&none        &kp A   &mt_cx LSHFT S  &cx_lt 7 D      &kp F          &kp G   &kp RG(TAB)                                  &caps_word      &kp H   &kp J   &cx_lt 6 K      &mt_cx RSHIFT L     &none      &none
-&none        &kp Z   &kp X           &kp C           &kp V          &kp B   &kp ESC         &none       &none            &kp TAB         &kp N   &kp M   &none           &kp PERIOD          &kp COMMA  &none
+&none        &kp A   &mt_cx LSHFT S  &cx_lt 7 D      &kp F          &kp G   &kp RG(TAB)                                  &none           &kp H   &kp J   &cx_lt 6 K      &mt_cx RSHIFT L     &none      &none
+&none        &kp Z   &kp X           &kp C           &kp V          &kp B   &kp ESC         &none       &caps_word       &kp TAB         &kp N   &kp M   &none           &kp PERIOD          &kp COMMA  &none
 &bootloader  &none   &none           &none           &kp BACKSPACE          &cx_lt 1 ENTER  &sk LGUI    &sk RIGHT_SHIFT  &cx_lt 3 SPACE          &none   &kp RG(SPACE)   &none               &none      &none
             >;
         };
