@@ -69,11 +69,11 @@
 
         NAV {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                                     &trans        &kp RG(UP)        &kp PAGE_UP    &kp RG(DOWN)       &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                               &trans        &trans        &kp RG(LEFT)      &kp UP         &kp RG(RIGHT)      &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                               &trans        &kp RA(LEFT)  &kp LEFT          &kp DOWN       &kp RIGHT          &kp RA(RIGHT)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &none              &change_word  &trans        &kp RS(RA(LEFT))  &kp PAGE_DOWN  &kp RS(RA(RIGHT))  &trans         &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans    &kp RA(BACKSPACE)  &delete_line                &kp RA(DELETE)    &trans         &trans             &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                     &trans  &kp RG(UP)      &kp PAGE_UP    &kp RG(DOWN)   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                               &trans        &trans  &kp RG(LEFT)    &kp UP         &kp RG(RIGHT)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                               &trans        &none   &kp LEFT        &kp DOWN       &kp RIGHT      &none   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &none              &change_word  &trans  &kp RA(LEFT)    &kp PAGE_DOWN  &kp RA(RIGHT)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans    &kp RA(BACKSPACE)  &delete_line          &kp RA(DELETE)  &trans         &trans         &trans  &trans
             >;
         };
 
