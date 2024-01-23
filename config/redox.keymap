@@ -63,7 +63,7 @@
 &none        &kp Q   &mt_cx LALT W   &mt_cx LCTRL E  &kp R               &kp T   &none                                              &none           &kp Y   &kp U                &mt_cx RCTRL I  &mt_cx RIGHT_ALT O  &kp P      &none
 &none        &kp A   &mt_cx LSHFT S  &cx_lt 7 D      &kp F               &kp G   &kp RG(H)                                          &kp RG(SPACE)   &kp H   &kp J                &cx_lt 2 K      &mt_cx RSHIFT L     &none      &none
 &none        &kp Z   &kp X           &kp C           &kp V               &kp B   &kp RG(BACKSPACE)  &kp RG(TAB)    &caps_word       &kp TAB         &kp N   &kp M                &kp MINUS       &kp PERIOD          &kp COMMA  &none
-&bootloader  &none   &none           &none           &cx_lt 1 BACKSPACE          &mt RGUI ENTER     &kp ESCAPE     &sk RIGHT_SHIFT  &cx_lt 3 SPACE          &lt 2 RA(BACKSPACE)  &none           &none               &none      &none
+&bootloader  &none   &none           &none           &cx_lt 1 BACKSPACE          &mt RGUI ENTER     &kp ESCAPE     &sk RIGHT_SHIFT  &cx_lt 2 SPACE          &lt 3 RA(BACKSPACE)  &none           &none               &none      &none
             >;
         };
 
