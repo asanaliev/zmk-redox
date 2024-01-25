@@ -9,6 +9,8 @@
 
 &sk { quick-release; };
 
+&mt { flavor = "balanced"; };
+
 / {
     behaviors {
         cx_lt: cx_lt {
