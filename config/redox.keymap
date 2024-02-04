@@ -65,7 +65,7 @@
 
             bindings = <
 &bootloader  &kp N4  &kp N5        &kp N1       &kp N2      &kp N3                                                                      &kp N8  &kp N9       &kp N0       &kp N7        &kp N6         &kp F18
-&bt BT_CLR   &kp Q   &kp W         &mt RCTRL D  &kp R       &kp T   &kp LEFT_BRACKET                                 &kp RIGHT_BRACKET  &kp Y   &kp U        &mt RCTRL K  &kp O         &kp P          &kp EQUAL
+&bt BT_CLR   &kp Q   &kp W         &mt RCTRL E  &kp R       &kp T   &kp LEFT_BRACKET                                 &kp RIGHT_BRACKET  &kp Y   &kp U        &mt RCTRL I  &kp O         &kp P          &kp EQUAL
 &none        &kp A   &mt RSHIFT S  &mt RALT D   &mt RGUI F  &kp G   &kp RG(H)                                        &kp RG(SPACE)      &kp H   &mt RGUI J   &mt RALT K   &mt RSHIFT L  &kp SEMICOLON  &kp MINUS
 &none        &kp Z   &kp X         &kp C        &kp V       &kp B   &none             &none         &caps_word       &kp TAB            &kp N   &kp M        &kp COMMA    &kp PERIOD    &kp UP         &kp SINGLE_QUOTE
 &none        &none   &none         &none        &none               &lt 1 BACKSPACE   &kp ESCAPE    &sk RIGHT_SHIFT  &kp SPACE                  &lt 3 ENTER  &kp SLASH    &kp LEFT      &kp DOWN       &kp RIGHT
