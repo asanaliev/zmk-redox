@@ -63,7 +63,7 @@
             // | CRTL  | ALT | GUI | LOWER |    BKSP    | ESC | SPACE   | --- | DEL  | SPACE |     RET     | LEFT  | DOWN | UP |   RIGHT   |
 
             bindings = <
-&kp ESC  &kp N4  &kp N5        &kp N1       &kp N2      &kp N3                                                       &kp N8  &kp N9       &kp N0       &kp N7        &kp N6         &kp F18
+&kp ESC  &kp N4  &kp N5        &kp N1       &kp N2      &kp N3                                                       &kp N8  &kp N9       &kp N0       &kp N7        &kp N6         &none
 &kp TAB  &kp Q   &kp W         &mt RCTRL E  &kp R       &kp T   &kp LEFT_BRACKET                  &kp RIGHT_BRACKET  &kp Y   &kp U        &mt RCTRL I  &kp O         &kp P          &kp EQUAL
 &none    &kp A   &mt RSHIFT S  &mt RALT D   &mt RGUI F  &kp G   &none                             &none              &kp H   &mt RGUI J   &mt RALT K   &mt RSHIFT L  &kp SEMICOLON  &kp MINUS
 &none    &kp Z   &kp X         &kp C        &kp V       &kp B   &none             &none    &none  &none              &kp N   &kp M        &kp COMMA    &kp PERIOD    &kp UP         &kp SINGLE_QUOTE
