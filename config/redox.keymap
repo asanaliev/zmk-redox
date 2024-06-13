@@ -67,7 +67,7 @@
 &kp TAB  &kp Q   &kp W         &mt RCTRL E  &kp R       &kp T   &kp LEFT_BRACKET                  &kp RIGHT_BRACKET  &kp Y   &kp U        &mt RCTRL I  &kp O         &kp P          &kp EQUAL
 &none    &kp A   &mt RSHIFT S  &mt RALT D   &mt RGUI F  &kp G   &none                             &none              &kp H   &mt RGUI J   &mt RALT K   &mt RSHIFT L  &kp SEMICOLON  &kp MINUS
 &none    &kp Z   &kp X         &kp C        &kp V       &kp B   &none             &none    &none  &none              &kp N   &kp M        &kp COMMA    &kp PERIOD    &kp UP         &kp SINGLE_QUOTE
-&none    &none   &none         &none        &none               &lt 1 BACKSPACE   &none    &none  &kp SPACE                  &lt 3 ENTER  &kp SLASH    &kp LEFT      &kp DOWN       &kp RIGHT
+&none    &none   &none         &none        &none               &lt 1 BACKSPACE   &none    &none  &kp SPACE                  &lt 2 ENTER  &kp SLASH    &kp LEFT      &kp DOWN       &kp RIGHT
             >;
         };
 
@@ -78,16 +78,6 @@
 &trans  &trans  &trans  &none   &trans  &trans  &trans                   &trans  &none   &kp LEFT      &kp DOWN  &kp RIGHT      &none   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &none  &none   &trans  &kp RA(LEFT)  &none     &kp RA(RIGHT)  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &none   &trans    &none  &none           &none         &trans    &trans         &trans  &trans
-            >;
-        };
-
-        APPS {
-            bindings = <
-&trans  &trans  &trans  &trans        &trans  &trans                                       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans        &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp RG(DOWN)  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans        &trans  &trans  &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans        &trans          &kp RG(L)  &trans    &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
