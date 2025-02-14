@@ -67,7 +67,7 @@
 &kp LG(C)       &kp N4  &kp N5        &kp N1       &kp N2      &kp N3                                                         &kp N8  &kp N9       &kp N0       &kp N7        &kp N6         &kp F12
 &kp LG(V)       &kp Q   &kp W         &mt RCTRL E  &kp R       &kp T   &kp LEFT_BRACKET                    &kp RIGHT_BRACKET  &kp Y   &kp U        &mt RCTRL I  &kp O         &kp P          &kp EQUAL
 &none           &kp A   &mt RSHIFT S  &mt RALT D   &mt RGUI F  &kp G   &none                               &none              &kp H   &mt RGUI J   &mt RALT K   &mt RSHIFT L  &kp SEMICOLON  &kp MINUS
-&bootloader     &kp Z   &kp X         &kp C        &kp V       &kp B   &none             &none      &none  &none              &kp N   &kp M        &kp COMMA    &kp PERIOD    &kp UP         &kp SINGLE_QUOTE
+&bootloader     &kp Z   &kp X         &kp C        &kp V       &kp B   &none             &none      &none  &mo 2              &kp N   &kp M        &kp COMMA    &kp PERIOD    &kp UP         &kp SINGLE_QUOTE
 &bt BT_CLR_ALL  &none   &none         &none        &kp ESC             &lt 1 BACKSPACE   &kp TAB    &none  &kp SPACE                  &lt 2 ENTER  &kp SLASH    &kp LEFT      &kp DOWN       &kp GRAVE
             >;
         };
@@ -82,7 +82,7 @@
             >;
         };
 
-        SYMBOLS {
+        FN {
             // --------------------------------------------------------------------------------------------------------------------------
             // | ESC   |  1  |  2  |   3   |   4   |  5  |                   ---              |  6  |  7  |   8  |  9   |  0  |  DEL  |
             // | ESC   |  1  |  2  |   3   |   4   |  5  |   (   |           ---        |  )  |  6  |  7  |   8  |  9   |  0  |  DEL  |
@@ -91,65 +91,11 @@
             // | CRTL  | ALT | GUI | LOWER |     GUI     | LOWER | SPACE   | --- | DEL  |  0  |    RAISE  | LEFT | DOWN | UP  | RIGHT |
 
             bindings = <
-&trans  &trans  &kp GRAVE             &kp LS(EQUAL)         &kp SQT           &none                                                   &trans  &trans         &trans     &trans     &trans       &trans
+&trans  &kp F4  &kp F5                &kp F1                &kp F2            &kp F3                                                  &kp F8  &kp F9         &trans     &kp F7     &kp F6       &trans
 &none   &none   &kp LS(LEFT_BRACKET)  &kp LS(SINGLE_QUOTE)  &kp LEFT_BRACKET  &kp LS(GRAVE)  &trans                           &trans  &none   &kp BACKSLASH  &none      &kp GRAVE  &kp N0       &kp DEL
 &trans  &none   &kp LS(SEMICOLON)     &none                 &kp EQUAL         &kp SEMICOLON  &trans                           &trans  &none   &none          &kp EQUAL  &kp SLASH  &kp KP_PLUS  &kp KP_MINUS
 &trans  &none   &kp LS(BACKSLASH)     &kp LS(SLASH)         &kp SLASH         &kp BACKSLASH  &trans         &trans    &trans  &trans  &none   &none          &none      &none      &kp RET      &kp RET
 &trans  &trans  &trans                &trans                &trans                           &kp LS(EQUAL)  &trans    &trans  &none           &none          &trans     &trans     &trans       &trans
-            >;
-        };
-
-        DELETE_ {
-            // -----------------------------------------------------------------------------------------
-            // |  F1   |  F2   |    F3    |    F4     |     F5     | F6 |                   ---                | F7  | F8  |  F9  |  F10 | F11 | F12        |
-            // | TAB   |       |          |           |            |    | BOOTL |           ---        |  )    | BT1 | BT2 |  BT3 |  BT4 | BT5 | OUTPUT TGL |
-            // | CTRL  | MUTE  |  Vol Dn  |  Vol Up   | Play/Pause |    | RESET |           ---        |  ]    | F1  | F2  |  F3  |  F4  | F5  | F6         |
-            // | SHIFT | PSCRN |  PSCRN   |   CAPS    |            |    | PG_UP | PG_DOWN | --- | HOME | END   | F7  | F8  |  F9  |  F10 | F11 | F12        |
-            // | CRTL  | ALT   |  GUI     |   LOWER   |      GUI        | LOWER | SPACE   | --- | DEL  | SPACE |   RAISE   | LEFT | DOWN | UP  |   RIGHT    |
-
-            bindings = <
-&kp F1  &kp F2     &kp F3     &kp F4        &kp F5            &kp F6                                         &none  &none              &none         &none           &none   &none
-&trans  &none      &none      &none         &none             &none   &bootloader                    &none   &none  &none              &none         &none           &none   &none
-&trans  &none      &none      &kp C_VOL_UP  &kp C_PLAY_PAUSE  &none   &sys_reset                     &trans  &none  &kp RA(BACKSPACE)  &delete_line  &kp RA(DELETE)  &none   &none
-&trans  &kp PSCRN  &kp PSCRN  &kp CLCK      &none             &none   &trans       &trans    &trans  &trans  &none  &none              &none         &none           &none   &none
-&trans  &trans     &trans     &trans        &trans                    &trans       &trans    &none   &none          &none              &trans        &trans          &trans  &trans
-            >;
-        };
-
-        LAYER-00 {
-            // ----------------------------------------------------------------------------------------------------------------------------
-            // | ESC   |  1  |  2  |   3   |  4  |  5  |                   ---                |  6   |  7   |  8   |  9   |  0    |  DEL  |
-            // | ESC   |  !  |  @  |   #   |  $  |  %  |   (   |           ---        |  )    |  ^   |  &   |  *   |  (   |  )    |  DEL  |
-            // | CTRL  |  _  |  +  |   {   |  }  | "|" |   [   |           ---        |  ]    | HOME | PGUP | PRSC | UP   |  `    |   ~   |
-            // | SHIFT | ESC | GUI |   (   |  )  |     | PG_UP | PG_DOWN | --- | HOME | END   | END  | PGDN | LEFT | DOWN | RIGHT |  RET  |
-            // | CRTL  | ALT | GUI | LOWER |    GUI    | LOWER | SPACE   | --- | DEL  | SPACE |    RAISE    | LEFT | DOWN | UP    | RIGHT |
-
-            bindings = <
-&kp F19  &kp F16  &trans  &trans  &trans  &trans                                                 &none  &none                   &none                   &none   &none   &trans
-&kp F17  &none    &none   &none   &none   &none   &trans                           &kp C_BRI_UP  &none  &none                   &kp RS(RA(RC(RG(F2))))  &none   &none   &none
-&trans   &none    &none   &none   &none   &none   &trans                           &kp C_BRI_DN  &none  &kp RS(RA(RC(RG(F3))))  &kp RS(RA(RC(RG(F1))))  &none   &none   &none
-&trans   &none    &none   &none   &none   &none   &trans   &trans    &none         &kp F13       &none  &none                   &none                   &none   &none   &none
-&trans   &trans   &trans  &none   &trans          &kp ESC  &trans    &kp K_VOL_DN  &kp F14              &kp K_VOLUME_UP         &trans                  &trans  &trans  &trans
-            >;
-        };
-
-        MOUSE {
-            bindings = <
-&trans  &trans  &trans     &trans     &trans     &trans                                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &none   &kp RG(W)  &kp RG(H)  &trans     &trans  &trans                        &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &none   &none      &none      &none      &trans  &trans                        &trans  &trans  &trans  &none   &trans  &trans  &trans
-&trans  &trans  &none      &kp RG(C)  &kp RG(V)  &trans  &trans      &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &none              &kp ESCAPE  &none     &trans  &none           &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        APP_SPECIFIC {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                    &trans  &trans  &trans                  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans                  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &kp RS(RA(RC(RG(F6))))  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans    &trans  &trans          &trans  &trans                  &trans  &trans  &trans
             >;
         };
     };
