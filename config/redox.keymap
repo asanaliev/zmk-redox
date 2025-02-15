@@ -37,7 +37,7 @@
     };
 
     macros {
-        delete_line: del_line {
+        del_line: del_line {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RG(LEFT) &kp RC(K)>;
@@ -77,7 +77,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                                             &trans  &none          &none     &none          &trans  &bootloader
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans     &trans  &kp RG(LEFT)   &kp UP    &kp RG(RIGHT)  &trans  &trans
 &trans  &trans  &trans  &none   &trans  &trans  &trans                          &trans     &none   &kp LEFT       &kp DOWN  &kp RIGHT      &none   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &none         &none      &trans  &none          &none     &none          &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &none         &del_line  &trans  &none          &none     &none          &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &none   &trans    &kp LA(LEFT)  &del_word          &kp LA(RIGHT)  &trans    &trans         &trans  &trans
             >;
         };
