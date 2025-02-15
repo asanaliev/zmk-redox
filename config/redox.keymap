@@ -101,11 +101,11 @@
 
         APPS {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                    &trans  &trans                 &trans                 &trans                 &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                 &trans                 &trans                 &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &kp LS(LA(LC(LG(J))))  &kp LS(LA(LC(LG(K))))  &kp LS(LA(LC(LG(L))))  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans                 &trans                 &trans                 &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans    &trans  &trans          &trans                 &trans                 &trans                 &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                         &trans  &trans                 &trans                 &trans                 &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                    &trans       &trans  &trans                 &kp LS(LA(LC(LG(I))))  &trans                 &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                    &kp LG(TAB)  &trans  &kp LS(LA(LC(LG(J))))  &kp LS(LA(LC(LG(K))))  &kp LS(LA(LC(LG(L))))  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans       &trans  &trans                 &trans                 &trans                 &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans    &trans  &trans               &trans                 &trans                 &trans                 &trans  &trans
             >;
         };
     };
