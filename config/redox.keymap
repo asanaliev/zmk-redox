@@ -44,7 +44,7 @@
             label = "DEL_LINE";
         };
 
-        change_word: delete_word {
+        delete_word: delete_word {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RA(LEFT) &kp RA(DELETE)>;
@@ -74,11 +74,11 @@
 
         NAV {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                   &trans  &none         &none     &none          &trans  &bootloader
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                   &trans  &trans  &kp RG(LEFT)  &kp UP    &kp RG(RIGHT)  &trans  &trans
-&trans  &trans  &trans  &none   &trans  &trans  &trans                   &trans  &none   &kp LEFT      &kp DOWN  &kp RIGHT      &none   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &none  &none   &trans  &kp RA(LEFT)  &none     &kp RA(RIGHT)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &none   &trans    &none  &none           &none         &trans    &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                         &trans  &none         &none     &none          &trans  &bootloader
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                   &trans        &trans  &kp RG(LEFT)  &kp UP    &kp RG(RIGHT)  &trans  &trans
+&trans  &trans  &trans  &none   &trans  &trans  &trans                   &trans        &none   &kp LEFT      &kp DOWN  &kp RIGHT      &none   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &none  &none         &trans  &kp RA(LEFT)  &none     &kp RA(RIGHT)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &none   &trans    &none  &delete_word          &none         &trans    &trans         &trans  &trans
             >;
         };
 
@@ -96,6 +96,16 @@
 &trans  &none   &kp LS(SEMICOLON)     &none                 &kp EQUAL         &kp SEMICOLON  &trans                    &trans  &none   &none          &kp EQUAL  &kp SLASH  &kp KP_PLUS  &kp KP_MINUS
 &trans  &none   &kp LS(BACKSLASH)     &kp LS(SLASH)         &kp SLASH         &kp BACKSLASH  &trans  &trans    &trans  &trans  &none   &none          &none      &none      &kp RET      &kp RET
 &trans  &trans  &trans                &trans                &to 0                            &none   &trans    &trans  &none           &none          &trans     &trans     &trans       &trans
+            >;
+        };
+
+        DELETE {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans    &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
