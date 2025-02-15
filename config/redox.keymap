@@ -44,17 +44,10 @@
             label = "DEL_LINE";
         };
 
-        delete_word: delete_word {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RA(LEFT) &kp RA(DELETE)>;
-            label = "DELETE_WORD";
-        };
-
         del_word: del_word {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LEFT_ARROW) &kp RA(DEL)>;
+            bindings = <&kp LA(RIGHT) &kp LA(BACKSPACE)>;
             label = "DEL_WORD";
         };
     };
