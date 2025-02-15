@@ -50,6 +50,13 @@
             bindings = <&kp RA(LEFT) &kp RA(DELETE)>;
             label = "DELETE_WORD";
         };
+
+        del_word: del_word {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LEFT_ARROW) &kp RA(DEL)>;
+            label = "DEL_WORD";
+        };
     };
 
     keymap {
@@ -74,11 +81,11 @@
 
         NAV {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                   &trans  &none         &none     &none          &trans  &bootloader
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                   &trans  &trans  &kp RG(LEFT)  &kp UP    &kp RG(RIGHT)  &trans  &trans
-&trans  &trans  &trans  &none   &trans  &trans  &trans                   &trans  &none   &kp LEFT      &kp DOWN  &kp RIGHT      &none   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &none  &none   &trans  &kp RA(LEFT)  &none     &kp RA(RIGHT)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &none   &trans    &none  &none           &none         &trans    &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &none         &none     &none          &trans  &bootloader
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                   &trans     &trans  &kp RG(LEFT)  &kp UP    &kp RG(RIGHT)  &trans  &trans
+&trans  &trans  &trans  &none   &trans  &trans  &trans                   &trans     &none   &kp LEFT      &kp DOWN  &kp RIGHT      &none   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &none  &none      &trans  &kp RA(LEFT)  &none     &kp RA(RIGHT)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &none   &trans    &none  &del_word          &none         &trans    &trans         &trans  &trans
             >;
         };
 
