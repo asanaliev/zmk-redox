@@ -64,11 +64,11 @@
             // | CRTL  | ALT | GUI | LOWER |    BKSP    | ESC | SPACE   | --- | DEL  | SPACE |     RET     | LEFT  | DOWN | UP |   RIGHT   |
 
             bindings = <
-&kp LG(SPACE)   &kp N4  &kp N5          &kp N1            &kp N2      &kp N3                                                &kp N8  &kp N9       &kp N0             &kp N7           &kp N6         &none
-&none           &kp Q   &kp W           &mt RCTRL E       &kp R       &kp T   &none                              &none      &kp Y   &kp U        &mt RCTRL I        &kp O            &kp P          &kp EQUAL
-&caps_word      &kp A   &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt RGUI F  &kp G   &none                              &none      &kp H   &mt RGUI J   &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &kp SEMICOLON  &kp MINUS
-&bootloader     &kp Z   &kp X           &kp C             &kp V       &kp B   &kp NUMBER_1     &none      &none  &none      &kp N   &kp M        &kp COMMA          &kp PERIOD       &none          &kp SINGLE_QUOTE
-&bt BT_CLR_ALL  &sl 2   &none           &none             &kp ESC             &lt 1 BACKSPACE  &kp TAB    &none  &kp SPACE          &lt 2 ENTER  &kp SLASH          &none            &none          &kp GRAVE
+&kp LG(SPACE)   &kp N4  &kp N5          &kp N1            &kp N2      &kp N3                                                            &kp N8  &kp N9       &kp N0             &kp N7           &kp N6         &none
+&none           &kp Q   &kp W           &mt RCTRL E       &kp R       &kp T   &none                                  &none              &kp Y   &kp U        &mt RCTRL I        &kp O            &kp P          &kp EQUAL
+&caps_word      &kp A   &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt RGUI F  &kp G   &none                                  &none              &kp H   &mt RGUI J   &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &kp SEMICOLON  &kp MINUS
+&bootloader     &kp Z   &kp X           &kp C             &kp V       &kp B   &kp NUMBER_1     &none      &none      &kp DOUBLE_QUOTES  &kp N   &kp M        &kp COMMA          &kp PERIOD       &none          &kp SINGLE_QUOTE
+&bt BT_CLR_ALL  &sl 2   &none           &none             &kp ESC             &lt 1 BACKSPACE  &kp TAB    &kp EQUAL  &lt 3 SPACE                &lt 2 ENTER  &kp SLASH          &none            &none          &kp GRAVE
             >;
         };
 
@@ -96,6 +96,16 @@
 &trans  &none   &kp LS(SEMICOLON)     &none                 &kp EQUAL         &kp SEMICOLON  &trans                    &trans  &none   &none          &kp EQUAL  &kp SLASH  &kp KP_PLUS  &kp KP_MINUS
 &trans  &none   &kp LS(BACKSLASH)     &kp LS(SLASH)         &kp SLASH         &kp BACKSLASH  &trans  &trans    &trans  &trans  &none   &none          &none      &none      &kp RET      &kp RET
 &trans  &trans  &trans                &trans                &to 0                            &none   &trans    &trans  &none           &none          &trans     &trans     &trans       &trans
+            >;
+        };
+
+        SYMBOLS {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans    &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
