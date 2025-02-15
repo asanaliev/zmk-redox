@@ -66,7 +66,7 @@
 &kp LG(SPACE)  &kp N4  &kp N5          &kp N1            &kp N2      &kp N3                                                                                 &kp N8  &kp N9       &kp N0             &kp N7           &kp N6         &kp LG(TAB)
 &none          &kp Q   &kp W           &mt RCTRL E       &kp R       &kp T   &kp LS(LA(LC(LG(LEFT))))                            &kp LS(LA(LC(LG(UP))))     &kp Y   &kp U        &mt RCTRL I        &kp O            &kp P          &none
 &caps_word     &kp A   &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt RGUI F  &kp G   &sl 3                                               &kp LG(LS(LA(LC(RIGHT))))  &kp H   &mt RGUI J   &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &kp SEMICOLON  &none
-&none          &kp Z   &kp X           &kp C             &kp V       &kp B   &none                     &none      &kp BACKSLASH  &kp SINGLE_QUOTE           &kp N   &kp M        &kp COMMA          &kp PERIOD       &kp SLASH      &none
+&none          &kp Z   &kp X           &kp C             &kp V       &kp B   &kp NUMBER_1              &none      &kp BACKSLASH  &kp SINGLE_QUOTE           &kp N   &kp M        &kp COMMA          &kp PERIOD       &kp SLASH      &none
 &bootloader    &none   &none           &none             &kp ESC             &lt 1 BACKSPACE           &kp TAB    &kp EQUAL      &lt 2 SPACE                        &lt 2 ENTER  &kp MINUS          &kp GRAVE        &kp F11        &kp F12
             >;
         };
