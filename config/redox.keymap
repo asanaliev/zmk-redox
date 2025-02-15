@@ -68,7 +68,7 @@
 &none           &kp Q   &kp W           &mt RCTRL E       &kp R       &kp T   &none                                  &none             &kp Y   &kp U        &mt RCTRL I        &kp O            &kp P          &none
 &caps_word      &kp A   &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt RGUI F  &kp G   &none                                  &none             &kp H   &mt RGUI J   &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &kp SEMICOLON  &none
 &bootloader     &kp Z   &kp X           &kp C             &kp V       &kp B   &kp NUMBER_1     &none      &none      &kp SINGLE_QUOTE  &kp N   &kp M        &kp COMMA          &kp PERIOD       &kp GRAVE      &none
-&bt BT_CLR_ALL  &sl 2   &none           &none             &kp ESC             &lt 1 BACKSPACE  &kp TAB    &kp EQUAL  &lt 3 SPACE               &lt 2 ENTER  &kp SLASH          &none            &none          &none
+&bt BT_CLR_ALL  &sl 2   &none           &none             &kp ESC             &lt 1 BACKSPACE  &kp TAB    &kp EQUAL  &lt 3 SPACE               &lt 2 ENTER  &kp SLASH          &kp MINUS        &none          &none
             >;
         };
 
