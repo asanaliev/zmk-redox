@@ -67,7 +67,7 @@
 &none        &kp Q   &kp W           &mt RCTRL E       &kp R       &kp T   &kp LS(LA(LC(NUMBER_3)))                                    &kp LS(LA(LC(N8)))  &kp Y   &kp U        &mt RCTRL I        &kp O            &kp P          &none
 &none        &kp A   &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt RGUI F  &kp G   &kp LS(LA(LC(G)))                                           &kp LS(LA(LC(H)))   &kp H   &mt RGUI J   &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &kp SEMICOLON  &caps_word
 &none        &kp Z   &kp X           &kp C             &kp V       &kp B   &kp NUMBER_1              &kp LS(LA(LC(TAB)))    &kp MINUS  &kp SINGLE_QUOTE    &kp N   &kp M        &kp COMMA          &kp PERIOD       &kp SLASH      &none
-&none        &none   &none           &kp TAB           &kp ESC             &lt 1 BACKSPACE           &sl 3                  &kp EQUAL  &lt 2 SPACE                 &lt 2 ENTER  &kp BACKSLASH      &kp GRAVE        &kp F11        &kp F12
+&none        &none   &none           &kp TAB           &kp ESC             &lt 1 BACKSPACE           &sl 3                  &kp EQUAL  &lt 2 SPACE                 &lt 2 ENTER  &kp BACKSLASH      &kp GRAVE        &none          &kp F11
             >;
         };
 
@@ -100,11 +100,11 @@
 
         STICKY {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                    &trans  &trans                 &trans                 &trans                 &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none                     &trans  &trans  &kp LS(LA(LC(LG(U))))  &kp LS(LA(LC(LG(I))))  &kp LS(LA(LC(LG(O))))  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                    &none   &trans  &kp LS(LA(LC(LG(J))))  &kp LS(LA(LC(LG(K))))  &kp LS(LA(LC(LG(L))))  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans                 &trans                 &trans                 &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans    &trans  &trans          &trans                 &trans                 &trans                 &trans  &none
+&trans  &trans  &trans  &trans  &trans  &trans                                     &trans  &trans                 &trans                 &trans                 &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp F12                    &trans  &trans  &kp LS(LA(LC(LG(U))))  &kp LS(LA(LC(LG(I))))  &kp LS(LA(LC(LG(O))))  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                     &none   &trans  &kp LS(LA(LC(LG(J))))  &kp LS(LA(LC(LG(K))))  &kp LS(LA(LC(LG(L))))  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans    &trans  &trans  &trans  &trans                 &trans                 &trans                 &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans   &trans    &trans  &trans          &trans                 &trans                 &trans                 &trans  &none
             >;
         };
     };
