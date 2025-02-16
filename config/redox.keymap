@@ -104,7 +104,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &none                     &trans  &trans  &kp LS(LA(LC(LG(U))))  &kp LS(LA(LC(LG(I))))  &kp LS(LA(LC(LG(O))))  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                    &none   &trans  &kp LS(LA(LC(LG(J))))  &kp LS(LA(LC(LG(K))))  &kp LS(LA(LC(LG(L))))  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans                 &trans                 &trans                 &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans    &trans  &trans          &trans                 &trans                 &trans                 &trans  &bootloader
+&trans  &trans  &trans  &trans  &trans          &trans  &trans    &trans  &trans          &trans                 &trans                 &trans                 &trans  &none
             >;
         };
     };
