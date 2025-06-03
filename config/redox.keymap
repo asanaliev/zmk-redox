@@ -64,11 +64,11 @@
             // | CRTL  | ALT | GUI | LOWER |    BKSP    | ESC | SPACE   | --- | DEL  | SPACE |     RET     | LEFT  | DOWN | UP |   RIGHT   |
 
             bindings = <
-&kp NUMBER_1  &kp N4  &kp N5          &kp N1            &kp N2      &kp N3                                                                      &kp N8  &kp N9       &kp N0             &kp N7           &kp N6         &kp LG(SPACE)
-&kp NUMBER_2  &kp Q   &kp W           &mt RCTRL E       &kp R       &kp T   &kp LS(LA(LC(NUMBER_3)))                        &kp LS(LA(LC(N8)))  &kp Y   &kp U        &mt RCTRL I        &kp O            &kp P          &none
-&kp NUMBER_3  &kp A   &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt RGUI F  &kp G   &kp LS(LA(LC(G)))                               &kp LS(LA(LC(H)))   &kp H   &mt RGUI J   &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &kp SEMICOLON  &caps_word
-&kp NUMBER_4  &kp Z   &kp X           &kp C             &kp V       &kp B   &kp RIGHT_BRACKET         &kp TAB    &kp MINUS  &kp SINGLE_QUOTE    &kp N   &kp M        &kp COMMA          &kp PERIOD       &kp SLASH      &none
-&none         &none   &none           &none             &kp ESC             &lt 1 BACKSPACE           &sl 3      &kp ENTER  &lt 2 SPACE                 &lt 2 ENTER  &kp BACKSLASH      &kp GRAVE        &none          &kp F11
+&kp NUMBER_1  &kp N4        &kp N5          &kp N1            &kp N2      &kp N3                                                            &kp N8  &kp N9      &kp N0             &kp N7           &kp N6         &kp NUMBER_1
+&kp NUMBER_2  &kp Q         &kp W           &mt RCTRL E       &kp R       &kp T   &kp NUMBER_1                                &kp NUMBER_1  &kp Y   &kp U       &mt RCTRL I        &kp O            &kp P          &kp NUMBER_2
+&kp NUMBER_3  &kp A         &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt RGUI F  &kp G   &kp NUMBER_2                                &kp NUMBER_2  &kp H   &mt RGUI J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &kp SEMICOLON  &kp NUMBER_3
+&kp NUMBER_4  &kp Z         &kp X           &kp C             &kp V       &kp B   &kp NUMBER_3  &kp NUMBER_4    &kp NUMBER_4  &kp NUMBER_3  &kp N   &kp M       &kp COMMA          &kp PERIOD       &kp SLASH      &kp NUMBER_4
+&kp N5        &kp NUMBER_6  &kp N7          &kp N8            &kp ESC             &kp N5        &kp NUMBER_6    &kp NUMBER_6  &kp N5                &kp ENTER   &kp N8             &kp N7           &kp NUMBER_6   &kp N5
             >;
         };
 
