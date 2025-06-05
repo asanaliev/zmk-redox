@@ -68,17 +68,7 @@
 &kp NUMBER_2  &kp Q         &kp W           &mt RCTRL E       &kp R          &kp T   &bt BT_CLR_ALL                                &kp NUMBER_1  &kp Y   &kp U       &mt RCTRL I        &kp O            &kp P          &kp NUMBER_2
 &kp NUMBER_3  &kp A         &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt RGUI F     &kp G   &bt BT_SEL 0                                  &kp NUMBER_2  &kp H   &mt RGUI J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &kp SEMICOLON  &kp NUMBER_3
 &bootloader   &kp Z         &kp X           &kp C             &kp V          &kp B   &kp NUMBER_3    &kp NUMBER_4    &kp NUMBER_4  &kp NUMBER_3  &kp N   &kp M       &kp COMMA          &kp PERIOD       &kp SLASH      &kp NUMBER_4
-&kp N5        &kp NUMBER_6  &kp N7          &kp N8            &kp BACKSPACE          &sl 2           &kp ESCAPE      &kp ENTER     &kp N5                &kp SPACE   &kp N8             &kp N7           &kp NUMBER_6   &kp N5
-            >;
-        };
-
-        NAV {
-            bindings = <
-&bt BT_SEL 0    &trans  &trans  &trans  &trans  &trans                                             &trans  &none          &none     &none          &trans  &bootloader
-&bt BT_DISC 0   &trans  &trans  &trans  &trans  &trans  &trans                          &trans     &trans  &kp RG(LEFT)   &kp UP    &kp RG(RIGHT)  &trans  &trans
-&bt BT_CLR      &trans  &trans  &none   &trans  &trans  &trans                          &trans     &none   &kp LEFT       &kp DOWN  &kp RIGHT      &none   &trans
-&bt BT_CLR_ALL  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &none         &del_line  &trans  &none          &none     &none          &trans  &trans
-&bootloader     &trans  &trans  &trans  &trans          &none   &trans    &kp LA(LEFT)  &del_word          &kp LA(RIGHT)  &trans    &trans         &trans  &trans
+&kp N5        &kp NUMBER_6  &kp N7          &kp N8            &kp BACKSPACE          &sl 1           &kp ESCAPE      &kp ENTER     &kp N5                &kp SPACE   &kp N8             &kp N7           &kp NUMBER_6   &kp N5
             >;
         };
 
@@ -96,16 +86,6 @@
 &trans  &none   &kp LEFT_BRACKET  &none   &kp RIGHT_BRACKET  &none   &none                     &trans   &none   &none   &none      &none   &none   &none
 &none   &none   &none             &none   &none              &none   &trans  &trans    &trans  &trans   &none   &none   &none      &none   &none   &none
 &none   &trans  &trans            &trans  &none                      &none   &trans    &trans  &kp TAB          &none   &trans     &trans  &trans  &trans
-            >;
-        };
-
-        STICKY {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                     &trans  &trans                 &trans                 &trans                 &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none                      &trans  &trans  &kp LS(LA(LC(LG(U))))  &kp LS(LA(LC(LG(I))))  &kp LS(LA(LC(LG(O))))  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                     &none   &trans  &kp LS(LA(LC(LG(J))))  &kp LS(LA(LC(LG(K))))  &kp LS(LA(LC(LG(L))))  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F12    &trans  &trans  &trans  &trans                 &trans                 &trans                 &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans     &trans  &trans          &trans                 &trans                 &trans                 &trans  &none
             >;
         };
     };
