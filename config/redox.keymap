@@ -68,7 +68,7 @@
 &kp NUMBER_2  &kp Q         &kp W           &mt RCTRL E       &kp R          &kp T   &bt BT_CLR_ALL                                &kp NUMBER_1  &kp Y   &kp U       &mt RCTRL I        &kp O            &kp P          &kp NUMBER_2
 &kp NUMBER_3  &kp A         &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt RGUI F     &kp G   &bt BT_SEL 0                                  &kp NUMBER_2  &kp H   &mt RGUI J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &kp SEMICOLON  &kp NUMBER_3
 &bootloader   &kp Z         &kp X           &kp C             &kp V          &kp B   &kp NUMBER_3    &kp NUMBER_4    &kp NUMBER_4  &kp NUMBER_3  &kp N   &kp M       &kp COMMA          &kp PERIOD       &kp SLASH      &kp NUMBER_4
-&kp N5        &kp NUMBER_6  &kp N7          &kp N8            &kp BACKSPACE          &kp N5          &kp ESCAPE      &kp ENTER     &kp N5                &kp SPACE   &kp N8             &kp N7           &kp NUMBER_6   &kp N5
+&kp N5        &kp NUMBER_6  &kp N7          &kp N8            &kp BACKSPACE          &sl 2           &kp ESCAPE      &kp ENTER     &kp N5                &kp SPACE   &kp N8             &kp N7           &kp NUMBER_6   &kp N5
             >;
         };
 
@@ -91,11 +91,11 @@
             // | CRTL  | ALT | GUI | LOWER |     GUI     | LOWER | SPACE   | --- | DEL  |  0  |    RAISE  | LEFT | DOWN | UP  | RIGHT |
 
             bindings = <
-&trans  &kp F4  &kp F5            &kp F1  &kp F2             &kp F3                                    &kp F8  &kp F9  &trans  &kp F7  &kp F6  &trans
-&none   &none   &kp LEFT_BRACE    &none   &kp RIGHT_BRACE    &none   &none                     &trans  &none   &none   &none   &none   &none   &none
-&trans  &none   &kp LEFT_BRACKET  &none   &kp RIGHT_BRACKET  &none   &none                     &trans  &none   &none   &none   &none   &none   &none
-&none   &none   &none             &none   &none              &none   &trans  &trans    &trans  &trans  &none   &none   &none   &none   &none   &none
-&none   &trans  &trans            &trans  &none                      &none   &trans    &trans  &none           &none   &trans  &trans  &trans  &trans
+&trans  &kp F4  &kp F5            &kp F1  &kp F2             &kp F3                                     &kp F8  &kp F9  &trans     &kp F7  &kp F6  &trans
+&none   &none   &kp LEFT_BRACE    &none   &kp RIGHT_BRACE    &none   &none                     &trans   &none   &none   &kp MINUS  &none   &none   &none
+&trans  &none   &kp LEFT_BRACKET  &none   &kp RIGHT_BRACKET  &none   &none                     &trans   &none   &none   &none      &none   &none   &none
+&none   &none   &none             &none   &none              &none   &trans  &trans    &trans  &trans   &none   &none   &none      &none   &none   &none
+&none   &trans  &trans            &trans  &none                      &none   &trans    &trans  &kp TAB          &none   &trans     &trans  &trans  &trans
             >;
         };
 
