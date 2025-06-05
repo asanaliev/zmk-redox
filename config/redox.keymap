@@ -68,7 +68,7 @@
 &kp NUMBER_2  &kp Q         &kp W           &mt RCTRL E       &kp R          &kp T   &none                                       &kp NUMBER_1  &kp Y   &kp U       &mt RCTRL I        &kp O            &kp P         &kp NUMBER_2
 &kp NUMBER_3  &kp A         &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt RGUI F     &kp G   &kp LG(TAB)                                 &kp NUMBER_2  &kp H   &mt RGUI J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &none         &kp NUMBER_3
 &bootloader   &kp Z         &kp X           &kp C             &kp V          &kp B   &kp NUMBER_3  &kp NUMBER_4    &kp NUMBER_4  &kp NUMBER_3  &kp N   &kp M       &kp COMMA          &kp PERIOD       &none         &kp NUMBER_4
-&kp LG(TAB)   &kp NUMBER_6  &kp N7          &kp N8            &kp BACKSPACE          &sl 1         &kp ESCAPE      &kp ENTER     &sl 1                 &kp SPACE   &kp N8             &kp N7           &kp NUMBER_6  &kp N5
+&kp LG(TAB)   &kp NUMBER_6  &kp N7          &kp N8            &kp BACKSPACE          &sl 2         &kp ESCAPE      &kp ENTER     &sl 1                 &kp SPACE   &kp N8             &kp N7           &kp NUMBER_6  &kp N5
             >;
         };
 
@@ -86,6 +86,16 @@
 &trans  &kp RIGHT_BRACKET  &kp LEFT_BRACKET  &kp EQUAL  &kp DOUBLE_QUOTES  &kp TILDE      &bt BT_SEL 0                      &trans   &kp TILDE      &kp DOUBLE_QUOTES  &kp EQUAL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
 &none   &none              &kp COLON         &kp SEMI   &kp SINGLE_QUOTE   &kp GRAVE      &trans          &trans    &trans  &trans   &kp GRAVE      &kp SINGLE_QUOTE   &kp SEMICOLON  &kp COLON         &none              &none
 &none   &trans             &trans            &trans     &none                             &none           &trans    &trans  &kp TAB                 &none              &trans         &trans            &trans             &trans
+            >;
+        };
+
+        NAV {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                                    &trans          &trans    &trans        &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans          &trans    &trans        &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans    &trans        &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans    &trans  &trans                  &trans    &trans        &trans     &trans  &trans
             >;
         };
     };
