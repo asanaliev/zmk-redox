@@ -81,11 +81,11 @@
             // | CRTL  | ALT | GUI | LOWER |     GUI     | LOWER | SPACE   | --- | DEL  |  0  |    RAISE  | LEFT | DOWN | UP  | RIGHT |
 
             bindings = <
-&trans  &none              &kp QUESTION      &kp PIPE   &kp SLASH          &none                                                     &none          &kp QUESTION       &kp PIPE       &kp SLASH         &none              &trans
-&none   &kp RIGHT_BRACE    &kp LEFT_BRACE    &kp MINUS  &kp PLUS           &kp BACKSLASH  &bt BT_CLR_ALL                    &trans   &kp BACKSLASH  &kp PLUS           &kp MINUS      &kp LEFT_BRACE    &kp RIGHT_BRACE    &none
-&trans  &kp RIGHT_BRACKET  &kp LEFT_BRACKET  &kp EQUAL  &kp DOUBLE_QUOTES  &kp TILDE      &bt BT_SEL 0                      &trans   &kp TILDE      &kp DOUBLE_QUOTES  &kp EQUAL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
-&none   &none              &kp COLON         &kp SEMI   &kp SINGLE_QUOTE   &kp GRAVE      &trans          &trans    &trans  &trans   &kp GRAVE      &kp SINGLE_QUOTE   &kp SEMICOLON  &kp COLON         &none              &none
-&none   &trans             &trans            &trans     &none                             &none           &trans    &trans  &kp TAB                 &none              &trans         &trans            &trans             &trans
+&trans  &none              &kp QUESTION      &kp PIPE   &kp SLASH          &none                                                           &none          &kp QUESTION       &kp PIPE       &kp SLASH         &none              &trans
+&none   &kp RIGHT_BRACE    &kp LEFT_BRACE    &kp MINUS  &kp PLUS           &kp BACKSLASH  &bt BT_CLR_ALL                    &kp RG(SPACE)  &kp BACKSLASH  &kp PLUS           &kp MINUS      &kp LEFT_BRACE    &kp RIGHT_BRACE    &none
+&trans  &kp RIGHT_BRACKET  &kp LEFT_BRACKET  &kp EQUAL  &kp DOUBLE_QUOTES  &kp TILDE      &bt BT_SEL 0                      &trans         &kp TILDE      &kp DOUBLE_QUOTES  &kp EQUAL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
+&none   &none              &kp COLON         &kp SEMI   &kp SINGLE_QUOTE   &kp GRAVE      &trans          &trans    &trans  &trans         &kp GRAVE      &kp SINGLE_QUOTE   &kp SEMICOLON  &kp COLON         &none              &none
+&none   &trans             &trans            &trans     &none                             &none           &trans    &trans  &kp TAB                       &none              &trans         &trans            &trans             &trans
             >;
         };
 
