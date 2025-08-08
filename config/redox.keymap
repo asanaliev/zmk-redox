@@ -67,7 +67,7 @@
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp NUMBER_1   &kp N5                                                             &kp N8  &kp N9     &kp N0           &kp N7             &kp N6        &kp NUMBER_1
 &kp NUMBER_2  &kp Q         &kp W         &kp E           &kp R          &kp T   &none                                     &kp NUMBER_1     &kp Y   &kp U      &kp I            &kp O              &kp P         &kp NUMBER_2
 &kp NUMBER_3  &kp A         &kp S         &mt LEFT_GUI D  &kp F          &kp G   &kp LG(TAB)                               &kp RG(SPACE)    &kp H   &kp J      &mt RIGHT_GUI K  &kp L              &none         &kp NUMBER_3
-&bootloader   &kp Z         &kp X         &kp C           &kp V          &kp B   &none         &kp NUMBER_4    &caps_word  &sk RIGHT_SHIFT  &kp N   &kp M      &kp COMMA        &kp PERIOD         &none         &kp NUMBER_4
+&bootloader   &kp Z         &kp X         &kp C           &kp V          &kp B   &sl 1         &kp NUMBER_4    &caps_word  &sk RIGHT_SHIFT  &kp N   &kp M      &kp COMMA        &kp PERIOD         &none         &kp NUMBER_4
 &kp LG(TAB)   &kp NUMBER_6  &kp N7        &kp N8          &kp BACKSPACE          &lt 2 ESCAPE  &kp TAB         &sl 1       &lt 1 SPACE              &kp ENTER  &kp RALT         &kp RIGHT_CONTROL  &kp NUMBER_6  &kp N5
             >;
         };
